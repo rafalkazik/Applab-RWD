@@ -1,0 +1,137 @@
+/* download section */
+/*  */
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  min-height: 200px;
+  background-color: var(--downloadBgc);
+}
+
+.download__title {
+  font-size: clamp(2.4rem, 3vw, 4rem);
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 3rem;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+  color: var(--brightFontColor);
+  text-align: center;
+}
+
+.download__icons-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.download__icon {
+  height: 70%;
+}
+
+/*  */
+/* bottom nav section */
+/*  */
+
+.bottom-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bottomNavBgc);
+  color: var(--greyFontColor);
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.bottom-nav__top,
+.bottom-nav__bottom-menu {
+  width: 95%;
+}
+
+.bottom-nav__text {
+  font-weight: 300;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  letter-spacing: 1px;
+  padding-right: 4rem;
+}
+.bottom-nav__icons {
+  display: flex;
+  gap: 1em;
+}
+
+.icons__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--socialBoxBgc);
+  margin: 3rem 0;
+}
+
+.icons__box {
+  cursor: pointer;
+}
+.icons__box:hover .icons__social {
+  transform: scale(1.1);
+}
+
+.icons__social {
+  font-size: 2rem;
+  color: var(--brightFontColor);
+  transition: 0.2s ease-in;
+}
+
+.bottom-menu__title {
+  font-size: clamp(2.5rem, 3vw, 4rem);
+  color: var(--brightFontColor);
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.bottom-menu__list {
+  margin-bottom: 3rem;
+}
+
+.bottom-menu__item {
+  margin: 2rem 0;
+}
+
+.bottom-menu__link {
+  text-decoration: none;
+  color: var(--greyFontColor);
+  font-size: clamp(1.5rem, 1.5vw, 2.5rem);
+  transition: 0.1s linear;
+}
+
+.bottom-menu__link:hover {
+  color: var(--brightFontColor);
+}
+/*  */
+/* footer */
+/*  */
+
+.footer {
+  background-color: var(--footerBgc);
+  color: var(--greyFontColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 10vh;
+  min-height: 90px;
+}
+
+.footer__rights {
+  font-size: clamp(1.3rem, 1.5vw, 2em);
+  font-weight: 400;
+}
+
+.rights__link {
+  color: var(--rightsLink);
+  text-decoration: none;
+  text-align: center;
+  margin-left: 0.5rem;
+}

@@ -8,6 +8,7 @@
   --heroBtnColor: #38ebed;
   --heroBtnColorHover: #2edde0;
   --featuresBtn: #1781f5;
+  --rightsLink: #1781f5;
   --featuresBtnHover: #3292f8;
   --reviewImgLayer: rgba(97, 174, 255, 0.897);
   --starsColor: #fed35a;
@@ -17,6 +18,10 @@
   --priceHeaderOrangeFont: #fdb26c;
   --priceHeaderGreen: #e8fcf1;
   --priceHeaderGreenFont: #41d778;
+  --downloadBgc: #5db2ff;
+  --bottomNavBgc: #202020;
+  --socialBoxBgc: #565656;
+  --footerBgc: #000000;
 }
 
 * {

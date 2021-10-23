@@ -38,6 +38,10 @@
   background-color: var(--mainBgc);
 }
 
+.nav__hamburger:hover {
+  cursor: pointer;
+}
+
 .nav__menu {
   display: none;
   text-align: center;

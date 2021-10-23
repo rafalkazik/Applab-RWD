@@ -36,7 +36,7 @@
   flex-direction: column;
   align-items: center;
   width: 95%;
-  max-width: 400px;
+  max-width: 450px;
   height: 100%;
   min-height: 300px;
   margin-bottom: 2.5rem;
@@ -73,8 +73,7 @@
 
 .options__title {
   grid-area: option;
-  justify-self: center;
-  align-self: center;
+  padding-left: 30%;
   color: var(--darkFontColor);
   font-weight: 500;
   font-size: clamp(1.6rem, 2vw, 2rem);
@@ -118,7 +117,7 @@
 }
 
 .options-list__item {
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 3rem 0;
 }
 
 .options-content__btn {
@@ -131,6 +130,7 @@
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 14px;
+  transition: 0.1s ease-in;
 }
 
 .options-content__btn:hover {
