@@ -2,7 +2,7 @@
 
 # Applab - responsive website
 
-Chceck live version of this project: **[LIVE]()**
+Chceck live version of this project: **[LIVE](https://rafalkazik.github.io/task-html-and-css-rwd/)**
 
 ## :technologist: Technologies and metodologies
 
