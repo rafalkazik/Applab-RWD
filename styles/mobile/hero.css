@@ -1,48 +1,54 @@
 .hero {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background-image: url(./../../images/banner/banner.png);
+  background-position: 50% -30px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% -30px;
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
-.hero__text-content {
+.hero__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   width: 95%;
+}
+
+.hero__text-content {
   color: var(--brightFontColor);
   margin-top: 3rem;
 }
 
 .hero__title {
-  font-size: clamp(2.4rem, 4vw, 5rem);
+  font-size: clamp(2.6rem, 4vw, 5rem);
+  font-weight: 300;
   letter-spacing: 1px;
-  font-weight: 400;
 }
 
 .hero__subtitle {
-  margin-top: 1rem;
-  font-weight: 300;
   font-size: clamp(1.5rem, 2vw, 2.5rem);
+  font-weight: 300;
+  margin-top: 1rem;
 }
 
 .hero__btn {
   background-color: var(--heroBtnColor);
-  border: none;
   border-radius: 5px;
-  letter-spacing: 2px;
+  border: none;
   color: var(--brightFontColor);
   font-size: 1.4rem;
   font-weight: 400;
-  padding: 1.5rem 2.2rem;
+  letter-spacing: 2px;
   margin: 3.5rem 0 8rem 0;
+  padding: 1.5rem 2.2rem;
   transition: 0.3s ease-in;
 }
 
 .hero__btn:hover {
-  cursor: pointer;
   background-color: var(--heroBtnColorHover);
+  cursor: pointer;
 }
 
 .hero__phone {
@@ -50,10 +56,10 @@
   justify-content: center;
 }
 .phone__img {
-  width: 90%;
-  animation-name: move;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  animation-name: move;
+  width: 100%;
 }
 
 @keyframes move {

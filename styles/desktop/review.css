@@ -1,0 +1,8 @@
+.review {
+  height: 80vh;
+}
+
+.review__content {
+  max-width: 1500px;
+  width: 95%;
+}

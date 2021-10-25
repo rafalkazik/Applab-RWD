@@ -1,0 +1,70 @@
+/* download section */
+/*  */
+
+.download {
+  height: 50vh;
+  min-height: 400px;
+}
+
+.download__title {
+  font-size: 4.5rem;
+  line-height: 6rem;
+  margin-bottom: 3rem;
+  padding: 0;
+  text-align: left;
+  width: 80%;
+}
+
+.download__span {
+  display: block;
+}
+
+.download__icon {
+  height: 90%;
+}
+/*  */
+/* bottom nav section */
+/*  */
+.bottom-nav {
+  display: grid;
+  grid-template-areas:
+    "top-socials links"
+    "services downloads";
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+}
+
+.bottom-nav__text {
+  font-size: clamp(1.4rem, 2vw, 1.5rem);
+}
+
+.bottom-nav__top {
+  grid-area: top-socials;
+}
+
+.bottom-menu:first-child {
+  grid-area: services;
+}
+
+.bottom-menu:nth-child(2) {
+  grid-area: links;
+}
+
+.bottom-menu:last-child {
+  grid-area: downloads;
+}
+
+.bottom-menu__title {
+  font-size: clamp(2.3rem, 2vw, 2.8rem);
+}
+
+.bottom-menu__list {
+  margin-bottom: 2rem;
+}
+
+.bottom-menu__link {
+  color: var(--greyFontColor);
+  font-size: clamp(1.3rem, 1vw, 2rem);
+  text-decoration: none;
+  transition: 0.1s linear;
+}

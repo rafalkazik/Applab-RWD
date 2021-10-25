@@ -1,0 +1,34 @@
+.review {
+  height: 55vh;
+  min-height: 450px;
+}
+
+.review__content {
+  width: 80%;
+}
+
+.review__title {
+  font-size: clamp(3rem, 3vw, 3.5rem);
+  margin: 0 auto 7rem auto;
+  padding: 0;
+  width: 50%;
+}
+
+.review__text {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+.fas {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+.note__name {
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+@media (min-width: 1024px) {
+  .review__title {
+    line-height: 4rem;
+    width: 40%;
+  }
+}

@@ -14,6 +14,7 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <!-- mobile -->
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/mobile/nav.css" />
     <link rel="stylesheet" href="./styles/mobile/hero.css" />
@@ -22,6 +23,78 @@
     <link rel="stylesheet" href="./styles/mobile/review.css" />
     <link rel="stylesheet" href="./styles/mobile/pricing.css" />
     <link rel="stylesheet" href="./styles/mobile/bottom.css" />
+    <!-- min. width: 768px -->
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="./styles/tablet/nav.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="./styles/tablet/hero.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="./styles/tablet/benefits.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="./styles/tablet/features.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="./styles/tablet/review.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="./styles/tablet/pricing.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="./styles/tablet/bottom.css"
+    />
+    <!-- min. width: 1200px -->
+    <link
+      rel="stylesheet"
+      media="(min-width: 1200px)"
+      href="./styles/desktop/nav.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1200px)"
+      href="./styles/desktop/hero.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1200px)"
+      href="./styles/desktop/benefits.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1200px)"
+      href="./styles/desktop/features.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1200px)"
+      href="./styles/desktop/review.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1200px)"
+      href="./styles/desktop/pricing.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1200px)"
+      href="./styles/desktop/bottom.css"
+    />
     <title>AppLab - task</title>
   </head>
   <body>
@@ -49,23 +122,27 @@
               <a href="#" class="menu__link">Pricing</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Blog</a>
+              <a href="#" class="menu__link menu__link--arrow menu__link--blog"
+                >Blog</a
+              >
               <ul class="menu__dropdown dropdown-blog">
-                <li class="dropdown-blog__item">
+                <li class="dropdown__item dropdown-blog__item">
                   <a href="#" class="dropdown__link">Articles</a>
                 </li>
-                <li class="dropdown-blog__item">
+                <li class="dropdown__item dropdown-blog__item">
                   <a href="#" class="dropdown__link">Comments</a>
                 </li>
               </ul>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Pages</a>
+              <a href="#" class="menu__link menu__link--arrow menu__link--pages"
+                >Pages</a
+              >
               <ul class="menu__dropdown dropdown-pages">
-                <li class="dropdown-pages__item">
+                <li class="dropdown__item dropdown-pages__item">
                   <a href="#" class="dropdown__link">Links</a>
                 </li>
-                <li class="dropdown-pages__item">
+                <li class="dropdown__item dropdown-pages__item">
                   <a href="#" class="dropdown__link">Technologies</a>
                 </li>
               </ul>
@@ -81,20 +158,22 @@
       <main class="main">
         <!-- HERO -->
         <section class="hero">
-          <article class="hero__text-content">
-            <h1 class="hero__title">Promote Your App With AppLab</h1>
-            <h2 class="hero__subtitle">
-              Get more users to promote your app with this template
-            </h2>
-            <button class="hero__btn">Get Start Now</button>
-          </article>
-          <picture class="hero__phone phone">
-            <img
-              src="./images/phone.png"
-              alt="phone image"
-              class="phone__img"
-            />
-          </picture>
+          <section class="hero__content">
+            <article class="hero__text-content">
+              <h1 class="hero__title">Promote Your App With AppLab</h1>
+              <h2 class="hero__subtitle">
+                Get more users to promote your app with this template
+              </h2>
+              <button class="hero__btn">Get Start Now</button>
+            </article>
+            <picture class="hero__phone phone">
+              <img
+                src="./images/phone.png"
+                alt="phone image"
+                class="phone__img"
+              />
+            </picture>
+          </section>
         </section>
         <!-- BENEFITS SECTION -->
         <section class="benefits">
@@ -155,10 +234,11 @@
         </section>
         <!-- FEATURES SECTION -->
         <section class="features">
-          <header class="features__header">
-            <h2 class="features__title">Features that give you real feel</h2>
-          </header>
           <section class="features__content">
+            <header class="features__header">
+              <h2 class="features__title">Features that give you real feel</h2>
+            </header>
+
             <p class="features__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
               amet et deleniti illo reprehenderit quia similique pariatur omnis
@@ -166,14 +246,14 @@
               suscipit impedit architecto exercitationem.
             </p>
             <button class="features__btn">Download Now</button>
-            <picture class="features__draw-picture draw-picture">
-              <img
-                src="./images/draw.png"
-                alt="draw image"
-                class="draw-picture__img"
-              />
-            </picture>
           </section>
+          <picture class="features__draw-picture draw-picture">
+            <img
+              src="./images/draw.png"
+              alt="draw image"
+              class="draw-picture__img"
+            />
+          </picture>
         </section>
         <!-- REVIEW SECTION -->
         <section class="review">
@@ -208,62 +288,65 @@
               aperiam excepturi.
             </h3>
           </header>
-          <section class="pricing__options options">
-            <article class="options__item">
-              <header class="options__header options__header--blue">
-                <h3 class="options__title">Basic</h3>
-                <h4 class="options__price options__price--blue">$06</h4>
-              </header>
-              <article class="options__options-content options-content">
-                <ul class="options-content__options-list options-list">
-                  <li class="options-list__item">One User</li>
-                  <li class="options-list__item">1000 ui elements</li>
-                  <li class="options-list__item">Webmail Support</li>
-                  <li class="options-list__item">100GB Cloud Storage</li>
-                </ul>
-                <button class="options-content__btn">Get Now</button>
+          <section class="pricing__content">
+            <section class="pricing__options options">
+              <article class="options__item">
+                <header class="options__header options__header--blue">
+                  <h3 class="options__title">Basic</h3>
+                  <h4 class="options__price options__price--blue">$06</h4>
+                </header>
+                <article class="options__options-content options-content">
+                  <ul class="options-content__options-list options-list">
+                    <li class="options-list__item">One User</li>
+                    <li class="options-list__item">1000 ui elements</li>
+                    <li class="options-list__item">Webmail Support</li>
+                    <li class="options-list__item">100GB Cloud Storage</li>
+                  </ul>
+                  <button class="options-content__btn">Get Now</button>
+                </article>
               </article>
-            </article>
-          </section>
-          <section class="pricing__options options">
-            <article class="options__item">
-              <header class="options__header options__header--orange">
-                <h3 class="options__title">Team</h3>
-                <h4 class="options__price options__price--orange">$06</h4>
-              </header>
-              <article class="options__options-content options-content">
-                <ul class="options-content__options-list options-list">
-                  <li class="options-list__item">One User</li>
-                  <li class="options-list__item">1000 ui elements</li>
-                  <li class="options-list__item">Webmail Support</li>
-                  <li class="options-list__item">100GB Cloud Storage</li>
-                </ul>
-                <button class="options-content__btn">Get Now</button>
+            </section>
+            <section class="pricing__options options">
+              <article class="options__item">
+                <header class="options__header options__header--orange">
+                  <h3 class="options__title">Team</h3>
+                  <h4 class="options__price options__price--orange">$06</h4>
+                </header>
+                <article class="options__options-content options-content">
+                  <ul class="options-content__options-list options-list">
+                    <li class="options-list__item">One User</li>
+                    <li class="options-list__item">1000 ui elements</li>
+                    <li class="options-list__item">Webmail Support</li>
+                    <li class="options-list__item">100GB Cloud Storage</li>
+                  </ul>
+                  <button class="options-content__btn">Get Now</button>
+                </article>
               </article>
-            </article>
-          </section>
-          <section class="pricing__options options">
-            <article class="options__item">
-              <header class="options__header options__header--green">
-                <h3 class="options__title">Business</h3>
-                <h4 class="options__price options__price--green">$06</h4>
-              </header>
-              <article class="options__options-content options-content">
-                <ul class="options-content__options-list options-list">
-                  <li class="options-list__item">One User</li>
-                  <li class="options-list__item">1000 ui elements</li>
-                  <li class="options-list__item">Webmail Support</li>
-                  <li class="options-list__item">100GB Cloud Storage</li>
-                </ul>
-                <button class="options-content__btn">Get Now</button>
+            </section>
+            <section class="pricing__options options">
+              <article class="options__item">
+                <header class="options__header options__header--green">
+                  <h3 class="options__title">Business</h3>
+                  <h4 class="options__price options__price--green">$06</h4>
+                </header>
+                <article class="options__options-content options-content">
+                  <ul class="options-content__options-list options-list">
+                    <li class="options-list__item">One User</li>
+                    <li class="options-list__item">1000 ui elements</li>
+                    <li class="options-list__item">Webmail Support</li>
+                    <li class="options-list__item">100GB Cloud Storage</li>
+                  </ul>
+                  <button class="options-content__btn">Get Now</button>
+                </article>
               </article>
-            </article>
+            </section>
           </section>
         </section>
         <!-- DOWNLOAD SECTION -->
         <section class="download">
           <h2 class="download__title">
-            Get start from now and increase productivity
+            Get start from now
+            <span class="download__span">and increase productivity</span>
           </h2>
           <div class="download__icons-wrapper">
             <a href="#" class="download__link"

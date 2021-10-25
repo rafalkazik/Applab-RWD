@@ -1,18 +1,18 @@
 .header {
+  align-items: center;
   background-color: var(--mobileMenuColor);
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .nav {
-  display: grid;
-  justify-content: center;
   align-content: center;
+  color: var(--brightFontColor);
+  display: grid;
   grid-template-areas: "logo . hamburger";
   grid-template-columns: 30% 60% 10%;
   height: 60px;
+  justify-content: center;
   width: 95%;
-  color: var(--brightFontColor);
 }
 
 .logo__img {
@@ -24,18 +24,18 @@
 }
 
 .nav__hamburger {
+  align-self: center;
   grid-area: hamburger;
   justify-self: center;
-  align-self: center;
 }
 
 .nav__hamburger span {
-  display: block;
-  width: 30px;
-  margin-bottom: 5px;
-  height: 3px;
-  border-radius: 3px;
   background-color: var(--mainBgc);
+  border-radius: 3px;
+  display: block;
+  height: 3px;
+  margin-bottom: 5px;
+  width: 30px;
 }
 
 .nav__hamburger:hover {
@@ -44,26 +44,40 @@
 
 .nav__menu {
   display: none;
-  text-align: center;
   font-size: 1.6rem;
   position: relative;
+  text-align: center;
+  transition: 0.2s ease-in;
 }
 
 span {
   transition: 0.2s linear;
 }
 
-input:checked ~ .nav__menu {
+input:not(:checked) ~ .nav__menu {
+  background-color: var(--mainBgc);
   display: flex;
   flex-direction: column;
+  height: 250px;
   justify-content: center;
-  position: absolute;
-  top: 60px;
   left: 50%;
+  position: absolute;
+  top: -360px;
   transform: translateX(-50%);
   width: 100%;
-  height: 250px;
+}
+
+input:checked ~ .nav__menu {
   background-color: var(--mainBgc);
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 60px;
+  transform: translateX(-50%);
+  width: 100%;
 }
 
 input:checked + .nav__hamburger > span:first-child {
@@ -88,8 +102,8 @@ input:checked + .nav__hamburger > span:last-child {
 
 .menu__link,
 .dropdown__link {
-  text-decoration: none;
   color: var(--darkFontColor);
+  text-decoration: none;
   text-transform: uppercase;
 }
 

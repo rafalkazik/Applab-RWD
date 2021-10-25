@@ -1,0 +1,31 @@
+.hero {
+  background-size: 100% 100%;
+  height: 900px;
+  position: relative;
+  top: -60px;
+}
+
+.hero__content {
+  justify-content: space-between;
+  width: 95%;
+}
+.hero__text-content {
+  width: 55%;
+}
+
+.hero__title {
+  font-size: clamp(2.7rem, 3vw, 5.3rem);
+}
+
+.hero__subtitle {
+  font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+}
+
+.hero__phone {
+  margin: 20rem 0 0 0;
+  width: 45%;
+}
+
+.hero__btn {
+  font-size: 1.5rem;
+}

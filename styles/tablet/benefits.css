@@ -1,0 +1,33 @@
+.benefits {
+  margin: 10rem 0 15rem 0;
+}
+
+.benefits__benefits-content {
+  display: flex;
+  max-width: 1200px;
+  width: 80%;
+}
+
+.benefits__title {
+  display: flex;
+  font-size: 3.5rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+  padding: 0 30%;
+}
+
+.benefits-item__desc {
+  font-size: 2rem;
+  padding: 0 0;
+  width: 100%;
+}
+
+.benefits-item__benefits-picutre--orange + .benefits-item__desc {
+  padding: 0 5rem;
+}
+
+@media (min-width: 1024px) {
+  .benefits__title {
+    padding: 0 35%;
+  }
+}

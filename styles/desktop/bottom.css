@@ -1,0 +1,39 @@
+.download {
+  flex-direction: row;
+}
+
+.download__title {
+  max-width: 1000px;
+  width: 60%;
+}
+
+.download__icons-wrapper {
+  gap: 3rem;
+  max-width: 500px;
+  width: 35%;
+}
+
+.download__icon {
+  height: 100%;
+}
+
+/* bottom nav */
+.bottom-nav {
+  align-items: flex-start;
+  display: grid;
+  grid-template-areas: "top-socials links services downloads";
+  grid-template-columns: 35% 15% 15% 15%;
+  justify-content: center;
+}
+
+.bottom-nav__top {
+  max-width: 600px;
+}
+
+.bottom-nav__bottom-menu {
+  max-width: 300px;
+}
+
+.bottom-menu__link {
+  font-size: clamp(1.3rem, 1vw, 1.6rem);
+}

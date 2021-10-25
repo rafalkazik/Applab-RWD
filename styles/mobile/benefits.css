@@ -1,9 +1,9 @@
 .benefits {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   margin-bottom: 5rem;
+  text-align: center;
 }
 
 .benefits__header {
@@ -11,11 +11,11 @@
 }
 
 .benefits__title {
-  font-size: clamp(2.5rem, 3vw, 4rem);
-  letter-spacing: 1px;
-  font-weight: 300;
-  margin-top: 3rem;
   color: var(--darkFontColor);
+  font-size: clamp(2.5rem, 3vw, 4rem);
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 3rem;
 }
 
 .benefits__benefits-content {
@@ -23,20 +23,20 @@
 }
 
 .benefits-content__benefits-item {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .benefits-item__benefits-picutre {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  width: 100px;
-  height: 100px;
   background-color: red;
+  border-radius: 15px;
+  display: flex;
+  height: 100px;
+  justify-content: center;
   margin: 2rem 0;
+  width: 100px;
 }
 
 .benefits-picture__icon {
@@ -56,9 +56,9 @@
 }
 
 .benefits-item__desc {
-  font-size: clamp(2rem, 2vw, 2.5rem);
-  letter-spacing: 1px;
-  font-weight: 300;
   color: var(--darkFontColor);
+  font-size: clamp(2rem, 2vw, 2.5rem);
+  font-weight: 300;
+  letter-spacing: 1px;
   padding: 0 5rem;
 }

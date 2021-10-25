@@ -1,0 +1,16 @@
+.features {
+  margin: 0 auto 15rem auto;
+  max-width: 1500px;
+  width: 95%;
+}
+
+.features__content {
+  width: 48%;
+}
+.features__draw-picture {
+  width: 48%;
+}
+
+.features__text {
+  line-height: 4rem;
+}

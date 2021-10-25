@@ -1,27 +1,29 @@
 :root {
-  --mainBgc: #ffffff;
+  --bottomNavBgc: #202020;
   --brightFontColor: #ffffff;
   --darkFontColor: #353535;
+  --downloadBgc: #5db2ff;
+  --featuresBtn: #1781f5;
+  --featuresBtnHover: #3292f8;
+  --footerBgc: #000000;
   --greyFontColor: #929292;
-  --pricingOptionsFontColor: #7c7c7c;
-  --mobileMenuColor: #2c2c2c;
   --heroBtnColor: #38ebed;
   --heroBtnColorHover: #2edde0;
-  --featuresBtn: #1781f5;
-  --rightsLink: #1781f5;
-  --featuresBtnHover: #3292f8;
-  --reviewImgLayer: rgba(97, 174, 255, 0.897);
-  --starsColor: #fed35a;
+  --heroDownloadBtn: #1a92dd;
+  --heroDownloadBtnHover: #0469a8;
+  --mainBgc: #ffffff;
+  --mobileMenuColor: #2c2c2c;
   --priceHeaderBlue: #e9f4fe;
   --priceHeaderBlueFont: #1a87f5;
-  --priceHeaderOrange: #fef4ee;
-  --priceHeaderOrangeFont: #fdb26c;
   --priceHeaderGreen: #e8fcf1;
   --priceHeaderGreenFont: #41d778;
-  --downloadBgc: #5db2ff;
-  --bottomNavBgc: #202020;
+  --priceHeaderOrange: #fef4ee;
+  --priceHeaderOrangeFont: #fdb26c;
+  --pricingOptionsFontColor: #7c7c7c;
+  --reviewImgLayer: rgba(97, 174, 255, 0.897);
+  --rightsLink: #1781f5;
   --socialBoxBgc: #565656;
-  --footerBgc: #000000;
+  --starsColor: #fed35a;
 }
 
 * {
