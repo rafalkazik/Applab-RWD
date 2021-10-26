@@ -25,9 +25,3 @@
 .benefits-item__benefits-picutre--orange + .benefits-item__desc {
   padding: 0 5rem;
 }
-
-@media (min-width: 1024px) {
-  .benefits__title {
-    padding: 0 35%;
-  }
-}
